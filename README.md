@@ -3,9 +3,9 @@
 Este repositório contém um mecanismo de jogo 3D básico criado com a biblioteca P3D, classes PShade e PVector na linguagem de programação Processing (Java). A 'engine' inclui um jogador e um inimigo (demonstrativo), os quais podem se mover no espaço 3D. O usuário controla o jogador usando as teclas de seta ou WASD, e a câmera pode ser girada usando o mouse.
 
 ## Bibliotecas/Classes
-P3D: Esta biblioteca fornece um motor de renderização 3D que permite a criação de gráficos 3D em Processing.
-PShade: Esta biblioteca fornece uma interface simples para trabalhar com shaders em Processing.
-PVector: Esta biblioteca fornece um conjunto de funções vetoriais que facilitam o trabalho com gráficos 3D em Processing.
+- P3D: Esta biblioteca fornece um motor de renderização 3D que permite a criação de gráficos 3D em Processing.
+- PShade: Esta classe fornece uma interface simples para trabalhar com shaders em Processing.
+- PVector: Esta biblioteca fornece um conjunto de funções vetoriais que facilitam o trabalho com gráficos 3D em Processing.
 
 ## Inicialização
 A função setup() inicializa a janela do jogo e configura o jogador e os objetos inimigos. O jogador e o inimigo são representados por objetos PVector que armazenam sua posição no espaço 3D. O movimento do jogador é controlado pelas teclas de seta ou WASD, e a câmera é girada com base na posição do mouse.
