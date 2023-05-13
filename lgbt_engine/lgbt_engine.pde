@@ -16,11 +16,7 @@ float inimigoVel,playerVel;
 
   
 float x = 50; // constante basica
-float y = 50; // constante basica
-
-float aleatorizarX = random(1,5000);
-float aleatorizarY = random(1,5000);
-  
+float y = 50;
 
 void setup(){
   background(0,0,0);
@@ -71,15 +67,18 @@ void draw(){
   fill(255,255,255);
   
   //chao e teto do jogo
+
+
   textureWrap(REPEAT);
   PVector[] verticesChao = new PVector[4];
   for (int i = 0; i < 5000; i += 2500) { 
+    //chao
     verticesChao[0] = new PVector(0, 0, 0);
     verticesChao[1] = new PVector(i*x, 0, 0);
     verticesChao[2] = new PVector(i*x, i*x, 0);
     verticesChao[3] = new PVector(0, i*x, 0);
     face(verticesChao[0],verticesChao[1],verticesChao[2],verticesChao[3],chao,50000,50000);
-
+    //teto
     verticesChao[0] = new PVector(0, 0, 2000);
     verticesChao[1] = new PVector(i*x, 0, 2000);
     verticesChao[2] = new PVector(i*x, i*y, 2000);
@@ -90,7 +89,9 @@ void draw(){
   textureWrap(REPEAT);
   
   // blocos
-  bloco(aleatorizarX,aleatorizarY,200,2000);
+  
+  bloco(2000,100,200,2000);
+  
 
 
   if (keyPressed) {
@@ -214,16 +215,16 @@ void bloco(float blocoX, float blocoY, float comprimento, float altura){
       verticesParede[3] = new PVector(blocoX, blocoY, altura);
       face(verticesParede[0],verticesParede[1],verticesParede[2],verticesParede[3],parede,1300,964);
       //face direita
-      verticesParede[4] = new PVector(blocoX, blocoY+(i*x)-comprimento/2, 0);
-      verticesParede[5] = new PVector(blocoX+i*x, blocoY+(i*x)-comprimento/2, 0);
-      verticesParede[6] = new PVector(blocoX+i*x, blocoY+(i*x)-comprimento/2, altura);
-      verticesParede[7] = new PVector(blocoX, blocoY+(i*x)-comprimento/2, altura);
+      verticesParede[4] = new PVector(blocoX, blocoY+(i*x)-comprimento/2+100, 0);
+      verticesParede[5] = new PVector(blocoX+i*x, blocoY+(i*x)-comprimento/2+100, 0);
+      verticesParede[6] = new PVector(blocoX+i*x, blocoY+(i*x)-comprimento/2+100, altura);
+      verticesParede[7] = new PVector(blocoX, blocoY+(i*x)-comprimento/2+100, altura);
       face(verticesParede[4],verticesParede[5],verticesParede[6],verticesParede[7],parede,1300,964);
       //face frontal
-      verticesParede[8] = new PVector(blocoX+(i*y)-comprimento, blocoY, 0);
-      verticesParede[9] = new PVector(blocoX+(i*y)-comprimento, blocoY+i*y, 0);
-      verticesParede[10] = new PVector(blocoX+(i*y)-comprimento, blocoY+i*y, altura);
-      verticesParede[11] = new PVector(blocoX+(i*y)-comprimento, blocoY, altura);
+      verticesParede[8] = new PVector(blocoX+(i*y)-comprimento+200, blocoY, 0);
+      verticesParede[9] = new PVector(blocoX+(i*y)-comprimento+200, blocoY+i*y, 0);
+      verticesParede[10] = new PVector(blocoX+(i*y)-comprimento+200, blocoY+i*y, altura);
+      verticesParede[11] = new PVector(blocoX+(i*y)-comprimento+200, blocoY, altura);
       face(verticesParede[8],verticesParede[9],verticesParede[10],verticesParede[11],parede,1300,964);
       //face anterior
       verticesParede[12] = new PVector(blocoX, blocoY, 0);
