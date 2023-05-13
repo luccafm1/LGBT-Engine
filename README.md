@@ -1,6 +1,8 @@
-# LGBT Engine
+# Backrooms: Escape from Gabriel
 
-Este repositório contém um mecanismo de jogo 3D básico criado com a biblioteca P3D, classes PShade e PVector na linguagem de programação Processing (Java). A 'engine' inclui um jogador e um inimigo (demonstrativo), os quais podem se mover no espaço 3D. O usuário controla o jogador usando as teclas de seta ou WASD, e a câmera pode ser girada usando o mouse.
+Este repositório contém um mecanismo de jogo 3D básico estilo Backroooms. Criado com a biblioteca P3D, classes PShade e PVector na linguagem de programação Processing (Java), a 'engine' renderiza o jogador, paredes e inimigos, os quais podem se mover no espaço 3D. O usuário controla o jogador usando as teclas de seta ou WASD, e a câmera pode ser girada usando o mouse.
+
+![Screenshot_1](https://github.com/luccafm1/LGBT-Engine/assets/45906809/d2259f06-8669-496b-9841-5165d89690ce)
 
 ## Bibliotecas/Classes
 - P3D: Esta biblioteca fornece um motor de renderização 3D que permite a criação de gráficos 3D em Processing.
