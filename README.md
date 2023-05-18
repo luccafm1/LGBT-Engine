@@ -1,4 +1,4 @@
-# Backrooms: Escape from Gabriel
+# Backrooms: Escape from the Nerdolas
 
 Este repositório contém um mecanismo de jogo 3D básico estilo Backroooms. Criado com a biblioteca P3D e minim, e utilizando das classes PShade e PVector, a 'engine' renderiza o jogador, paredes e inimigos, os quais podem se mover no espaço 3D. O usuário controla o jogador usando as teclas de seta ou WASD, e a câmera pode ser girada usando o mouse.
 
