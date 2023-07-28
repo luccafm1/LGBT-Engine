@@ -1,6 +1,6 @@
 # Backrooms: Escape from the Nerdolas
 
-Este repositório contém um mecanismo de jogo 3D básico estilo Backroooms. Criado com a biblioteca P3D e minim, e utilizando das classes PShade e PVector, a 'engine' renderiza o jogador, paredes e inimigos, os quais podem se mover no espaço 3D. O usuário controla o jogador usando as teclas de seta ou WASD, e a câmera pode ser girada usando o mouse.
+Este repositório contém um mecanismo de jogo 3D básico estilo Backroooms, criado na plataforma Processing.
 
 O jogo é estilo sobrevivência; o objetivo é sobreviver aos inimigos, que seguem o player.
 
@@ -8,11 +8,11 @@ O jogo é estilo sobrevivência; o objetivo é sobreviver aos inimigos, que segu
 
 ## Bibliotecas/Classes
 - P3D: Esta biblioteca (Primitive 3D) fornece um motor de renderização 3D, que nos permite a criação de gráficos 3D em Processing;
-- PShade: Esta classe fornece uma interface simples para trabalhar com shaders em Processing;
-- PVector: Esta classe fornece um conjunto de funções vetoriais que facilitam o trabalho com posicionamentos 3D em Processing;
+- PShade: Esta biblioteca fornece uma interface simples para trabalhar com shaders em Processing;
+- PVector: Esta biblioteca fornece um conjunto de funções vetoriais que facilitam o trabalho com posicionamentos 3D em Processing;
 - Minim: Esta biblioteca fornece recursos para importação e manipulação de áudio no jogo; 
 
-## Inicialização da Engine
+## Inicialização do jogo
 A função setup() inicializa a janela do jogo e configura o jogador e os objetos inimigos. O jogador e o inimigo são representados por objetos PVector que armazenam sua posição no espaço 3D. O movimento do jogador é controlado pelas teclas de seta ou WASD, e a câmera é girada com base na posição do mouse. A referência da câmera adota "-Z" como "cima" no programa.
 
 A função draw() é responsável por renderizar o jogo. Ele primeiro limpa a tela e configura a iluminação usando a função lights(). O inimigo é então renderizado usando a função inimigo(), e os blocos são desenhados usando a função bloco(), que também usa de vértices e vetores para armazenar suas posições, e texturas, e colisao() para lidar com as colisões entre o player e a parede.
